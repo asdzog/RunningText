@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+ <title> Создание бегущей строки </title>
+</head>
+<body>
+    <form method="post" action="{% url 'video_form' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit"> Создать </button>
+    </form>
+</body>
+</html>
